@@ -1,0 +1,16 @@
+﻿@model BloodRedSkiesViewModel
+
+
+    <h1>@Model.Nation</h1>
+    @foreach (var bloodRedSkiesPlane in Model.BloodRedSkiesPlane)
+        {
+            <div>
+                <h2>@bloodRedSkiesPlane.Type</h2>
+                <h3>@bloodRedSkiesPlane.Points.ToString()</h3>
+                <h4>@bloodRedSkiesPlane.Firepower</h4>       
+            </div>
+        }
+
+
+
+
